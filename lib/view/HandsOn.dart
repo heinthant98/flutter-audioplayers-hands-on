@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 class HandsOn extends StatelessWidget {
   HandsOn({Key? key}) : super(key: key);
   final List<Map<String, String>> songList = [
-    {"初恋" : "firstlove"},
-    {"レモン" : "lemon"},
+    {"First Love" : "firstlove"},
+    {"Lemon" : "lemon"},
     {"マリーゴールド" : "marigold"},
-    {"チェーンソーマン" : "chainsawman"},
+    {"KICKBACK" : "chainsawman"},
   ];
 
   final AudioCache _player = AudioCache();
@@ -25,14 +25,12 @@ class HandsOn extends StatelessWidget {
         backgroundColor: Colors.green,
         centerTitle: true,
         title: const Text(
-          // ToDo 好きなタイトルに変更
           "音楽リスト",
           style: TextStyle(
             fontSize: 32,
           ),
         ),
       ),
-      // ToDo bodyを記述
       body: Center(
         child: Column(
           children: [
